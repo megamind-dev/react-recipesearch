@@ -18,8 +18,8 @@
 import {
   LOAD_RECIPES,
   LOAD_RECIPES_SUCCESS,
-  LOAD_RECIPES_ERROR,
-} from './constants';
+  LOAD_RECIPES_ERROR
+} from "./constants";
 
 /**
  * Load the recipes, this action starts the request saga
@@ -28,7 +28,7 @@ import {
  */
 export function loadRecipes() {
   return {
-    type: LOAD_RECIPES,
+    type: LOAD_RECIPES
   };
 }
 
@@ -42,7 +42,7 @@ export function loadRecipes() {
 export function recipesLoaded(recipes) {
   return {
     type: LOAD_RECIPES_SUCCESS,
-    recipes,
+    recipes
   };
 }
 
@@ -56,6 +56,6 @@ export function recipesLoaded(recipes) {
 export function recipesLoadingError(error) {
   return {
     type: LOAD_RECIPES_ERROR,
-    error,
+    error
   };
 }

@@ -6,15 +6,15 @@
  * contain code that should be seen on all pages. (e.g. navigation bar)
  */
 
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import styled from 'styled-components';
-import { Switch, Route } from 'react-router-dom';
-import 'semantic-ui-css/semantic.min.css';
+import React from "react";
+import { Helmet } from "react-helmet";
+import styled from "styled-components";
+import { Switch, Route } from "react-router-dom";
+import "semantic-ui-css/semantic.min.css";
 
-import HomePage from 'containers/HomePage/Loadable';
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import HomePage from "containers/HomePage/Loadable";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 const AppWrapper = styled.div`
   margin: 0 auto;
@@ -26,11 +26,8 @@ const AppWrapper = styled.div`
 export default function App() {
   return (
     <AppWrapper>
-      <Helmet
-        titleTemplate="%s - Yakov Karavelov Test"
-        defaultTitle="Recipe Finder"
-      >
-        <meta name="description" content="Recipe Finder" />
+      <Helmet titleTemplate="%s -  Test" defaultTitle="Search Recipe">
+        <meta name="description" content="Search Recipe" />
       </Helmet>
       <Header />
       <Switch>
